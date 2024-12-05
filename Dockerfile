@@ -1,4 +1,4 @@
-FROM node:22
+FROM node:20
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -15,4 +15,4 @@ COPY . .
 # Expose the port
 EXPOSE 8000
 
-CMD [ "node", "index.js" ]
+CMD [ "npm", "start" ]
